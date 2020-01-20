@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "npx eslint \"**/*.{js,ts,tsx}\"",
-    "eslint:fix": "npm run eslint -- --fix",
-    "format": "prettier-eslint \"**/*.{js,ts,tsx}\" --write"
+    "eslint": "npx eslint --ignore-pattern \"public/*\" \"**/*.{js,ts,tsx}\"",
+    "eslint:fix": "npm run eslint --fix",
+    "format": "prettier-eslint \"**/*.{js,ts,tsx}\" --write",
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.dev.js"
   },
   "husky": {
     "hooks": {
