@@ -1,18 +1,18 @@
 module.exports = {
-  mode: 'development',
+  mode: "development",
 
-  entry: './src/index.tsx',
+  entry: "./src/index.tsx",
 
   output: {
     path: `${__dirname}/public`,
-    publicPath: 'build/',
-    filename: 'bundle.js',
+    publicPath: "build/",
+    filename: "bundle.js",
   },
 
-  devtool: 'source-map',
+  devtool: "source-map",
 
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json'],
+    extensions: [".ts", ".tsx", ".js", ".json"],
   },
 
   module: {
@@ -21,7 +21,7 @@ module.exports = {
         test: /\.tsx?$/,
         use: [
           {
-            loader: 'ts-loader',
+            loader: "ts-loader",
           },
         ],
       },
