@@ -11,11 +11,6 @@
     "start": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.dev.js"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.(js|jsx|ts|tsx)": [
       "npm run eslint:fix",
@@ -68,6 +63,7 @@
     "ts-loader": "^6.2.1",
     "typesafe-actions": "^5.1.0",
     "typescript": "^3.7.4",
+    "uuid": "^3.4.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   }
